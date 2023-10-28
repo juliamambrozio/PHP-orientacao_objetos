@@ -35,7 +35,7 @@
     echo $pai->getNome(); //não pode ser acessado porque é privado */
 
     class Pai{
-        private $nome = 'Jorge';
+        private $nome = 'Jorge'; //privado do objeto pai
         protected $sobrenome = 'Silva';
         public $humor = 'Feliz';
 
@@ -66,13 +66,39 @@
         }
     }
 
-    $pai = new Pai();
+    class Filho extends Pai{
+       public function __construct(){
+        echo '<pre>';
+        print_r(get_class_methods($this));
+        echo '</pre>';
+       } //objetos tem acesso aos seus atributos
+
+       private function executarMania(){
+            echo 'Assoviar'; //não pode executar porque é private
+        }
+    }
+
+    /* $pai = new Pai();
     echo $pai->sobrenome;
     $pai->sobrenome = 'Oliveira';
     echo '<br>';
     echo $pai->sobrenome;
 
-    $pai->executarAcao();
+    $pai->executarAcao(); */
+
+    $filho = new Filho();
+    echo '<pre>';
+    print_r($filho);
+    echo '</pre>';
+
+    $filho->executarAcao(); //fica chamando o do pai porque é privado
+
+   //O objeto privado só é exibido quando é colocado no objeto pai o get e o set
+
+   //a aplicação possui acesso apenas aos objetos públicos
+
+    
+
 
 
     ?>
