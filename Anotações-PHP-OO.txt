@@ -1,0 +1,45 @@
+APP SEND MAIL: Envio de e-mail, recuperando valores do front, pegando e 
+inserindo valores, verificando campos, biblioteca de envio de e-mails 
+(Packagist), gerando senha aleatória para o funcionamento do código, deixando 
+mais seguro
+
+--------------------------------------------------------------
+PHP com Orientação a objetos
+
+Paradigma procedural: comportamentos separados
+OO: juntos dentro de um objeto 
+
+1- Pilar da abstração
+2- Get e Set (pegar e setar, colocar
+3- Get e Set mágico (alterando de uma vez sem deixar o código longo (__set),
+chamar métodos do objeto internamente
+4- __destruct e __construct (finaliza o objeto e inicializa um objeto
+a partir da classe)
+5- Herança e construct
+6- Polimorfismo: Corrigir herdação sobrescrevendo
+7- Encapsulamento (controlar a visibilidade dos objetos), na herança 
+os private não são herdados
+8- Atributos e métodos estáticos (evitar usar)
+9- Interface (erdando regras, implementando mais de uma interface, extendendo 
+interfaces), só funciona com métodos
+10- Namespaces (conjunto de classes e interfaces, para evitar conflitos com 
+nomes)
+11- Inserindo bibliotecas de classes e inserindo qual namespace eu quero 
+(apelidos)
+12- Tratando erros e lançando erros, erro costumizado
+
+EXTRA
+
+Pilar da abstração: trazer coisas da vida real para o código
+Entidade: objeto
+Identidade: identidade para cada objeto criado com base da entidade
+Características: atributos
+Ações: métodos
+Pilar da herança: herda elementos
+Pilar do Polimorfismo: herda os elementos do pai, mas pode ser editados
+Pilar do Encapsulamento: controlar a visibilidade dos objetos, deixar 
+mais seguro (public, protected e private)
+
+ENVIO DE E-MAIL
+Protocolo smtp: recurso na internet que faz autenticação para dispara o e-mail
+SMTP (geralmente são fechados a aplicações externas)
